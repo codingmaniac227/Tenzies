@@ -1,0 +1,16 @@
+button {
+    box-shadow: 0 0.219rem 0.219rem 0 #00000026;
+    color: #2B283A;
+    align-self: center;
+    width: 2.24rem;
+    height: 2.24rem;
+    border-style: none;
+}
+
+
+button.matched {
+    background-color: #59E391;
+}
+
+
+
