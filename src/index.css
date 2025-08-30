@@ -9,6 +9,8 @@
   --bg: #ffffff;
   --ink: #0B2434;
   --page-bg: #f0f2f5;
+  --karla-font: 'Karla', sans-serif;
+  --inter-font: 'Inter', sans-serif;
 }
 
 html, body, #root { 
@@ -30,5 +32,5 @@ body {
 
 /* (Optional) global typography */
 body { 
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; 
+  font-family: var(--karla-font) 
 }
