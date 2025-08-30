@@ -8,7 +8,25 @@
 }
 
 .tenzies-background-canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20rem;
   height: 20rem;
   background-color: var(--bg);
+  border-radius: 0.625rem;
+}
+
+/* ---- DIE CONTAINER ---- */
+.dice-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-areas:
+  "die die die die die"
+  "die die die die die";
+  row-gap: 1.12rem;
+  column-gap: 1.16rem;
+  padding-left: 2.16rem;
+  padding-right: 2.16rem;
+  align-self: center;
 }
