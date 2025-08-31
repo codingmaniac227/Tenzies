@@ -33,6 +33,47 @@
   font-weight: 400;
   padding: 0.563rem 2.72rem 1.60rem 2.72rem;
 }
+
+/* ---- INSTRUCTIONS WIN CONTAINER ---- */
+.tenzies-background-win {
+  width: 22.5rem;
+  height: 23.688rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+.tenzies-background-canvas-win {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 0.625rem;
+  background-color: var(--bg);
+}
+
+.tenzies-instructions-win {
+  background: linear-gradient(to right, red, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  padding: 2.859rem;
+}
+
+.new-game {
+  width: auto;
+  height: auto;
+  padding: 0.625rem;
+  border-radius: 0.238rem;
+  color: #FFFFFF;
+  background-color: #5035FF;
+  margin-top: 3.125rem;
+}
+
 /* ---- DIE CONTAINER ---- */
 .dice-grid {
   display: grid;
@@ -54,3 +95,10 @@
   color: #FFFFFF;
   background-color: #5035FF;
 }
+
+/* ---- ANIMATIONS ---- */
+.tenzies-background,
+.tenzies-background-win {
+  transition: background-color .5s ease, background-image .5s ease;
+}
+
