@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/codingmaniac227/Tenzies" target="_blank" rel="noopener">
-    <img src="logo.png" alt="Logo" width="90" height="90" style="border-radius:50%">
+    <img src="./public/logo.png" alt="Logo" width="90" height="90" style="border-radius:50%">
   </a>
 
   <h3 align="center">Tenzies</h3>
@@ -53,7 +53,7 @@
 ## About The Project  
 
 <p align="center">
-  <img src="screenshot.png" alt="Tenzies Screenshot" width="520">
+  <img src="./public/screenshot.png" alt="Tenzies Screenshot" width="520">
 </p>
 
 Tenzies is a quick, casual dice game where the goal is to roll until all dice show the same number.  
