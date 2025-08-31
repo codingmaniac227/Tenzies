@@ -18,6 +18,21 @@
   border-radius: 0.625rem;
 }
 
+/* ---- INSTRUCTION CONTAINER ---- */
+.tenzies-instructions {
+  text-align: center;
+}
+
+.tenzies-instructions > h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.tenzies-instructions > h2 {
+  font-size: 0.819rem;
+  font-weight: 400;
+  padding: 0.563rem 2.72rem 1.60rem 2.72rem;
+}
 /* ---- DIE CONTAINER ---- */
 .dice-grid {
   display: grid;
