@@ -30,7 +30,7 @@ body {
   background-color: #BBBBBB;
 }
 
-/* (Optional) global typography */
+/* global typography */
 body { 
   font-family: var(--karla-font) 
 }
