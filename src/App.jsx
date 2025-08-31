@@ -2,6 +2,7 @@ import './App.css'
 import { nanoid } from 'nanoid'
 import DiceGrid from './components/DiceGrid'
 import Die from './components/Die'
+import Instructions from './components/Instructions'
 import { useEffect, useState } from 'react'
 
 
@@ -42,6 +43,7 @@ export default function App() {
     <>
       <main className="tenzies-background">
         <article className="tenzies-background-canvas">
+          <Instructions className='tenzies-instructions' />
           <DiceGrid className='dice-grid'>
             {dice.map(die => (
               <Die key={die.id} id={die.id} value={die.value} isHeld={die.isHeld} saveDie={saveDie} />
