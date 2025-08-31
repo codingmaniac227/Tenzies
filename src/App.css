@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 20rem;
   height: 20rem;
   background-color: var(--bg);
@@ -28,5 +29,13 @@
   column-gap: 1.16rem;
   padding-left: 2.16rem;
   padding-right: 2.16rem;
-  align-self: center;
+  padding-bottom: 2.12rem;
+}
+
+.roll-btn {
+  width: 5.76rem;
+  height: 2.24rem;
+  border-radius: 0.238rem;
+  color: #FFFFFF;
+  background-color: #5035FF;
 }
