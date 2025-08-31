@@ -13,7 +13,9 @@ button {
 
 button.matched {
     background-color: #59E391;
+    border-radius: 0.325rem;
 }
+
 
 
 
