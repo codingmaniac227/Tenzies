@@ -1,4 +1,5 @@
 import './App.css'
+import { nanoid } from 'nanoid'
 import DiceGrid from './components/DiceGrid'
 import Die from './components/Die'
 import { useEffect, useState } from 'react'
@@ -9,16 +10,31 @@ import { useEffect, useState } from 'react'
 }
 
 function generateAllNewDice() {
-  return Array.from({ length: 10 }, () => getRandomDieValue())
+  return Array.from({ length: 10 }, () => ({
+    id: nanoid(),
+    value: getRandomDieValue(),
+    isHeld: false
+  }))
 }
 
 export default function App() {
   
-  const [die, setDie] = useState(() => generateAllNewDice())
+  const [dice, setDice] = useState(() => generateAllNewDice())
+
 
   function rollDice() {
-    setDie(generateAllNewDice)
-    console.log(die)
+    setDice(prev => 
+      prev.map(d =>
+        (d.isHeld ? d : { ...d, value: getRandomDieValue() })))
+    console.log(dice)
+  }
+
+  function saveDie(id) {
+    setDice(prev =>
+      prev.map(d => 
+        d.id === id ? {...d, isHeld: !d.isHeld} : d
+      ))
+      console.log(id)
   }
   
 
@@ -27,8 +43,8 @@ export default function App() {
       <main className="tenzies-background">
         <article className="tenzies-background-canvas">
           <DiceGrid className='dice-grid'>
-            {die.map((value, i) => (
-              <Die key={i} value={value} />
+            {dice.map(die => (
+              <Die key={die.id} id={die.id} value={die.value} isHeld={die.isHeld} saveDie={saveDie} />
             ))}
           </DiceGrid>
           <button type='button' onClick={rollDice} className='roll-btn'>
